@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Gold | HIRANYA</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+
+    ✨ Free Shipping on Orders Above ₹10,000 |
+    BIS Hallmarked Jewellery |
+    Digital Gold Available
+
+</div>
+
+<header>
+    <header class="navbar">
+
+    <div class="container nav-container">
+
+      <div class="logo">
+  
+    <h2>✦ HIRANYA</h2>
+    <p>Crafting Precious Moments</p>
+</div>  
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Collections</a></li>
+
+                <li><a href="digital-gold.html">Digital Gold</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+       <div class="nav-icons">
+
+
+
+    <a href="cart.html">
+       <a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+    </a>
+
+    </div>
+
+</header>
+</header>
+
+<section class="page-banner">
+
+    <h1>Digital Gold</h1>
+
+    
+</section>
+
+<section class="digital-gold">
+
+    <h1 class="digital-title">Digital Gold Investment</h1>
+
+    <p class="digital-subtitle">
+        Invest in 24K Pure Gold anytime, anywhere.
+    </p>
+
+    <div class="digital-container">
+
+        <div class="digital-card">
+
+            <h2>Why Choose Digital Gold?</h2>
+
+            <ul>
+                <li>✅ 24K BIS Certified Gold</li>
+                <li>✅ Start from ₹10</li>
+                <li>✅ 100% Safe & Secure</li>
+                <li>✅ Sell Anytime</li>
+                <li>✅ Redeem as Jewellery</li>
+                <li>✅ Live Gold Price</li>
+            </ul>
+
+        </div>
+
+        <div class="digital-card">
+
+            <h2>Invest Now</h2>
+
+            <label>Enter Amount (₹)</label>
+
+            <input type="number" placeholder="Minimum ₹10">
+
+           <button class="btn-primary" onclick="buyDigitalGold()">
+                 Buy Digital Gold
+            </button>
+
+            <div class="gold-price">
+                Today's Gold Price <br>
+                ₹14,000 / gram
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    
+    <footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+            <h2>✦ HIRANYA</h2>
+            <p>
+                Crafting Precious Moments with timeless jewellery,
+                certified diamonds and secure digital gold investments.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+           <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html" class="active">Collections</a></li>
+                    <li><a href="digital-gold.html" class="active">Digital Gold</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                
+
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📍 Chennai, Tamil Nadu</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉ support@hiranya.com</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 HIRANYA. All Rights Reserved.
+    </div>
+
+</footer>
+<script>
+function buyDigitalGold(){
+
+    const amount = document.querySelector('input[type="number"]').value;
+
+    if(amount==="" || amount<10){
+        alert("Minimum investment is ₹10");
+        return;
+    }
+
+    localStorage.setItem("digitalGoldAmount", amount);
+
+    window.location.href="success.html";
+
+}
+</script>
+</body>
+
+</html>

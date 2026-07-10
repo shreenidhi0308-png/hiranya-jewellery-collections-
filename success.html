@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Successful | HIRANYA</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<section class="product-details-section">
+
+<div class="container" style="text-align:center; padding:100px 20px;">
+
+<h1 style="color:green; font-size:50px;">
+✅
+</h1>
+
+<h1>
+Order Placed Successfully!
+</h1>
+
+<p style="margin:20px 0;">
+Thank you for shopping with <strong>HIRANYA</strong>.
+Your order has been received successfully.
+</p>
+<p id="digitalAmount" style="font-size:22px; color:#b8860b; font-weight:bold;"></p>
+<a href="index.html" class="buy-btn">
+Continue Shopping
+</a>
+
+</div>
+
+</section>
+<script>
+const amount = localStorage.getItem("digitalGoldAmount");
+
+if(amount){
+    document.querySelector("h1").innerText = "Digital Gold Purchased Successfully!";
+    document.getElementById("digitalAmount").innerHTML =
+        "Investment Amount : ₹" + amount;
+
+    localStorage.removeItem("digitalGoldAmount");
+}
+</script>
+</body>
+
+</html>

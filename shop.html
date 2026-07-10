@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | HIRANYA</title>
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+
+    <div class="announcement-bar">
+        ✨ Free Shipping on Orders Above ₹10,000 |
+        BIS Hallmarked Jewellery |
+        Digital Gold Available
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+                
+                <h2>✦ HIRANYA</h2>
+                <p>Crafting Precious Moments</p>
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+                   <li><a href="shop.html" class="active">Collections</a></li>
+                    <li><a href="digital-gold.html" class="active">Digital Gold</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+           <div class="nav-icons">
+
+    <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+
+    <a href="cart.html">
+       <a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+    </a>
+
+</div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="shop-hero">
+
+        <div class="container">
+
+            <h1>Our Jewellery Collection</h1>
+
+            <p>
+                Explore handcrafted gold, diamond and bridal collections
+                designed to celebrate every precious moment.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Search -->
+
+   <section class="shop-products">
+
+    <div class="container">
+
+        <div class="shop-top">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Jewellery..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+                <option value="rings">Rings</option>
+                <option value="necklace">Necklaces</option>
+                <option value="earrings">Earrings</option>
+                <option value="bangles">Bangles</option>
+                <option value="diamond">Diamond</option>
+                <option value="bridal">Bridal</option>
+                <option value="rosegold">Rose Gold</option>
+                <option value="silver">Silver</option>
+                <option value="pooja">Pooja</option>
+
+            </select>
+
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+
+    </div>
+
+</section>
+<script src="assets/css/js/images/products.js"></script>
+<script>
+
+document.getElementById("searchBtn").onclick=function(){
+
+document.getElementById("searchInput").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+document.getElementById("searchInput").focus();
+
+}
+
+</script>
+</body>
+</html>

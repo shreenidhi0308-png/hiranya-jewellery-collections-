@@ -1,0 +1,58 @@
+/* ==========================
+   HIRANYA DESIGN SYSTEM
+========================== */
+
+/* Google Fonts
+Playfair Display
+Poppins
+*/
+
+:root{
+
+    /* COLORS */
+
+    --gold:#A67C00;
+    --gold-dark:#A8833C;
+    --black:#1B1B1B;
+    --white:#FFFFFF;
+    --ivory:#FAF7F2;
+    --bronze:#8C6A43;
+    --gray:#6B7280;
+    --light-gray:#EAEAEA;
+
+    /* FONTS */
+
+    --heading-font:'Playfair Display', serif;
+    --body-font:'Poppins', sans-serif;
+
+    /* FONT SIZE */
+
+    --fs-xl:64px;
+    --fs-lg:42px;
+    --fs-md:30px;
+    --fs-sm:20px;
+    --fs-body:16px;
+
+    /* SPACING */
+
+    --space-xl:120px;
+    --space-lg:80px;
+    --space-md:50px;
+    --space-sm:30px;
+    --space-xs:15px;
+
+    /* BORDER */
+
+    --radius:20px;
+    --btn-radius:12px;
+
+    /* SHADOW */
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    /* TRANSITION */
+
+    --transition:.4s ease;
+
+}
